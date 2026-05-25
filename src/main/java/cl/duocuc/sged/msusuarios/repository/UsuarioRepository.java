@@ -7,8 +7,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
-// PATRÓN: Repository Pattern
-// Abstrae el acceso a datos desacoplando la lógica de negocio de la persistencia.
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 

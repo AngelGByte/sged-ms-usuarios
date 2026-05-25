@@ -10,8 +10,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
-// PATRÓN: Service Layer
-// Centraliza la lógica de negocio separándola del controlador y del repositorio.
 @Service
 public class UsuarioService {
 
@@ -82,7 +80,6 @@ public class UsuarioService {
         usuarioRepository.save(usuario);
     }
 
-    // PATRÓN: DTO - convierte entidad a respuesta sin exponer campos sensibles
     private UsuarioDTO.Response toResponse(Usuario usuario) {
         UsuarioDTO.Response response = new UsuarioDTO.Response();
         response.setId(usuario.getId());
